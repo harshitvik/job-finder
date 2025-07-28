@@ -1,0 +1,46 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+  <title>AI Career Path Finder</title>
+  <link rel="stylesheet" href="style.css" />
+</head>
+<body>
+  <div class="container">
+    <h1>AI Career Path Finder</h1>
+
+    <form id="careerForm">
+      <label>What are your interests?</label>
+      <select id="interest" required>
+        <option value="">--Choose--</option>
+        <option value="design">Design</option>
+        <option value="analytics">Analytics</option>
+        <option value="problem-solving">Problem Solving</option>
+        <option value="writing">Writing</option>
+      </select>
+
+      <label>What skills do you currently have?</label>
+      <input type="text" id="skills" placeholder="e.g. HTML, CSS, JS" required />
+
+      <button type="submit">Find Career Path</button>
+    </form>
+
+    <div id="result" class="hidden">
+      <h2>Suggested Career Path</h2>
+      <p id="career"></p>
+
+      <h3>Recommended Skills to Learn</h3>
+      <ul id="skillsList"></ul>
+
+      <h3>Learning Path</h3>
+      <ol id="learningPath"></ol>
+
+      <h3>Resume Tip</h3>
+      <p id="resumeTip"></p>
+    </div>
+  </div>
+
+  <script src="script.js"></script>
+</body>
+</html>
